@@ -1,0 +1,162 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.tokenDetails {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.imageContainer {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.collectionInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.collectionImage {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.collectionName {
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a202c;
+}
+
+.ownerLink {
+  text-decoration: none;
+}
+
+.owner {
+  font-size: 0.875rem;
+  color: #4a5568;
+  background-color: #f7fafc;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  display: inline-block;
+}
+
+.priceContainer {
+  background-color: #f7fafc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.priceLabel {
+  color: #718096;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c5282;
+  margin: 0;
+}
+
+.notForSale {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #718096;
+  margin: 0;
+}
+
+.loading {
+  height: 1.5rem;
+  background-color: #edf2f7;
+  border-radius: 0.25rem;
+  animation: pulse 1.5s infinite;
+}
+
+.buyButton {
+  margin: 1rem 0;
+}
+
+.description {
+  margin-top: 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1a202c;
+}
+
+.traitsContainer {
+  margin-top: 1rem;
+}
+
+.traits {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.trait {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.traitType {
+  color: #718096;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.traitValue {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: 768px) {
+  .tokenDetails {
+    grid-template-columns: 1fr 1fr;
+  }
+} 
